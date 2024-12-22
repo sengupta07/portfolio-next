@@ -10,6 +10,12 @@ const assets = {
     image8: '/images/image8.png',
     image9: '/images/image9.png',
     image10: '/images/image10.png',
+
+    //TESTIMONIAL
+    quotes: '/icons/quotes.svg',
+
+    //PATTERNS
+    squarePattern: '/patterns/squarePattern.svg',
   }
   
 export default assets

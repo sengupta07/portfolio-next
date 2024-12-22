@@ -6,7 +6,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <nav className="container flex justify-between items-center py-2">
+    <nav className="container flex justify-between items-center pt-5">
       <Link href="/" className="font-bold text-2xl">
         Suman Sengupta
       </Link>

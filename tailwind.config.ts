@@ -12,6 +12,7 @@ export default {
       colors: {
         background: '#161616',
         foreground: "#1E1E1F",
+        linkHover: "#1B1B1C",
         textHover: "#C5C0C0",
         primaryTheme: "#F24E1E",
       },
@@ -31,10 +32,20 @@ export default {
           '0%': { opacity: '0', transform: 'translateY(20px) scale(0.8)' },
           '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
         },
+        'infinite-scroll-rtl': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'infinite-scroll-ltr': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
+        },
       },
       animation: {
         'infinite-scroll-ttb': 'infinite-scroll-ttb 25s linear infinite',
         'infinite-scroll-btt': 'infinite-scroll-btt 25s linear infinite',
+        'infinite-scroll-rtl': 'infinite-scroll-rtl 25s linear infinite',
+        'infinite-scroll-ltr': 'infinite-scroll-ltr 25s linear infinite',
         fadeInUp: 'fadeInUp 3s ease-in forwards',
       },
     },
