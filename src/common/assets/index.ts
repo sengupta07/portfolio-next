@@ -16,6 +16,13 @@ const assets = {
 
     //PATTERNS
     squarePattern: '/patterns/squarePattern.svg',
+
+    //BRANDS
+    brainseed: '/brands/brainseed.png',
+    geotech: '/brands/geotechlogo.svg',
+
+    //PROJECTS
+    avatarGenerator: '/projects/avatarGenerator.png'
   }
   
 export default assets

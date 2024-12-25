@@ -15,6 +15,7 @@ export default {
         linkHover: "#1B1B1C",
         textHover: "#C5C0C0",
         primaryTheme: "#F24E1E",
+        tag:"#85E0BA"
       },
       borderRadius: {
         elements: '20px',

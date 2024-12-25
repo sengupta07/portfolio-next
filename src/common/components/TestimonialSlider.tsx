@@ -34,7 +34,7 @@ const testimonials = [
 const TestimonialSlider = () => {
   return (
     <div className="space-y-5">
-      <h4 className="px-6 pt-6 font-medium">What clients say</h4>
+      <h5 className="px-6 pt-6 font-medium">What clients say</h5>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

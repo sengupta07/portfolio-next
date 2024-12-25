@@ -55,7 +55,7 @@ const Hero = () => {
             }}
           ></div>
         </div>
-        <h4 className="font-medium opacity-25 px-6 pt-6">Core tools I use</h4>
+        <h5 className="font-medium opacity-25 px-6 pt-6">Core tools I use</h5>
         <TechnologyCards />
       </Card>
       <div className="flex flex-col gap-6">
