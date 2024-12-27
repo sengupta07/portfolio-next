@@ -4,6 +4,8 @@ import Clients from '@/app/components/Clients';
 import MyServices from './components/MyServices';
 import ProjectsShowcase from './components/ProjectsShowcase';
 import ExperienceSection from './components/ExperienceSection';
+import BlogSection from './components/BlogSection';
+import GetInTouch from './components/GetInTouch';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <MyServices />
       <ProjectsShowcase />
       <ExperienceSection />
+      <BlogSection />
+      <GetInTouch />
     </main>
   );
 }

@@ -17,6 +17,7 @@ const buttonVariants = cva(
         link: 'text-white hover:text-textHover',
         ctaButton:
           'backdrop-blur-[26.73px] bg-white bg-opacity-5 shadow-[inset_0_1.34px_1.34px_rgba(255,255,255,0.15),inset_0_0_20.05px_rgba(255,255,255,0.05)] transition-colors duration-300 group-hover:bg-linkHover',
+        nonButton: '',
       },
       size: {
         sm: 'px-3 py-1 text-sm',
