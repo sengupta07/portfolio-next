@@ -22,7 +22,10 @@ const assets = {
     geotech: '/brands/geotechlogo.svg',
 
     //PROJECTS
-    avatarGenerator: '/projects/avatarGenerator.png'
+    avatarGenerator: '/projects/avatarGenerator.png',
+
+    //COMPANIES I WORKED
+    geotechInfo: '/logos/geotech.jpg'
   }
   
 export default assets

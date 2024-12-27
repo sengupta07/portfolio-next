@@ -6,15 +6,17 @@ import ArrowRight from '@/common/icons/ArrowRight';
 import { Slot } from '@radix-ui/react-slot';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center rounded-full font-medium focus:outline-none group',
+  'inline-flex items-center justify-center rounded-full font-medium focus:outline-none group ',
   {
     variants: {
       variant: {
-        primary: 'bg-primaryTheme text-white hover:bg-white hover:text-black transition-colors duration-300',
+        primary: 'bg-primaryTheme text-white hover:bg-white hover:text-black transition-colors duration-300 ',
         secondary: 'bg-gray-200 text-black hover:bg-gray-300',
         danger: 'bg-red-500 text-white hover:bg-red-600',
         outline: 'border border-gray-300 text-gray-700 hover:bg-gray-100',
         link: 'text-white hover:text-textHover',
+        ctaButton:
+          'backdrop-blur-[26.73px] bg-white bg-opacity-5 shadow-[inset_0_1.34px_1.34px_rgba(255,255,255,0.15),inset_0_0_20.05px_rgba(255,255,255,0.05)] transition-colors duration-300 group-hover:bg-linkHover',
       },
       size: {
         sm: 'px-3 py-1 text-sm',

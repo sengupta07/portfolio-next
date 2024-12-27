@@ -3,6 +3,7 @@ import Card from './Card';
 import Button from './Button';
 import ArrowRight from '../icons/ArrowRight';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
   tag: string;
@@ -12,22 +13,24 @@ type Props = {
 
 const ProjectCard = ({ tag, heading, projectImageSrc }: Props) => {
   return (
-    <Card className="flex flex-col">
-      <div className="flex justify-between items-center mb-4">
-        <div className="space-y-4">
-          <div className="inline-flex items-center bg-tag bg-opacity-10 text-green-300 border border-green-900 px-3 rounded-full text-sm py-1 announcement-badge">
-            {tag}
+    <Link href={'https://github.com/sengupta07'} className="group">
+      <Card className="flex flex-col">
+        <div className="flex justify-between items-center mb-4">
+          <div className="space-y-4">
+            <div className="inline-flex items-center bg-tag bg-opacity-10 text-green-300 border border-green-900 px-3 rounded-full text-sm py-1 announcement-badge">
+              {tag}
+            </div>
+            <h6 className="font-semibold">{heading}</h6>
           </div>
-          <h6 className="font-semibold">{heading}</h6>
+          <Button variant={'ctaButton'} asChild className="p-2">
+            <ArrowRight className="group-hover:!transform-none" />
+          </Button>
         </div>
-        <Button asChild>
-          <ArrowRight />
-        </Button>
-      </div>
-      <div className="relative w-full h-[200px] sm:h-[300px] md:h-[390px] mb-4">
-        <Image alt={heading} src={projectImageSrc} layout="fill" objectFit="cover" className="rounded-lg" />
-      </div>
-    </Card>
+        <div className="relative w-full h-[200px] sm:h-[300px] md:h-[390px] mb-4">
+          <Image alt={heading} src={projectImageSrc} layout="fill" objectFit="cover" className="rounded-lg" />
+        </div>
+      </Card>
+    </Link>
   );
 };
 

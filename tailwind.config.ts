@@ -12,6 +12,7 @@ export default {
       colors: {
         background: '#161616',
         foreground: "#1E1E1F",
+        topForeground: "#222223",
         linkHover: "#1B1B1C",
         textHover: "#C5C0C0",
         primaryTheme: "#F24E1E",

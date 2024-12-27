@@ -3,6 +3,7 @@ import Hero from '@/app/components/Hero';
 import Clients from '@/app/components/Clients';
 import MyServices from './components/MyServices';
 import ProjectsShowcase from './components/ProjectsShowcase';
+import ExperienceSection from './components/ExperienceSection';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       {/* <Clients /> */}
       <MyServices />
       <ProjectsShowcase />
+      <ExperienceSection />
     </main>
   );
 }
