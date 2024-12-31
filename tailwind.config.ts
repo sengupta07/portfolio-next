@@ -10,13 +10,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#161616',
+        background: '#121212',
+        footer:'#0F0F0F',
         foreground: "#1E1E1F",
         topForeground: "#222223",
         linkHover: "#1B1B1C",
         textHover: "#C5C0C0",
         primaryTheme: "#F24E1E",
-        tag:"#85E0BA"
+        tag:"#85E0BA",
       },
       borderRadius: {
         elements: '20px',
