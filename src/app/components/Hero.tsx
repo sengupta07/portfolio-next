@@ -1,3 +1,4 @@
+'use client';
 import assets from '@/common/assets';
 import AutoplayCarousel from '@/common/components/AutoplayCarousel';
 import Button from '@/common/components/Button';
@@ -7,6 +8,9 @@ import TechnologyCards from '@/common/components/TechnologyCards';
 import TestimonialCard from '@/common/components/TestimonialCard';
 import TestimonialSlider from '@/common/components/TestimonialSlider';
 import React from 'react';
+import Lottie from 'lottie-react';
+import ComputerAnimation from '@/common/icons/hero3.json';
+import HeroTextCarousal from './HeroTextCarousal';
 
 const Hero = () => {
   const startDate = new Date('2021-01-01');
@@ -15,26 +19,28 @@ const Hero = () => {
 
   return (
     <div className="container grid grid-cols-3 gap-5">
-      <div className="px-14 py-12 col-span-3 grid grid-cols-2 bg-foreground rounded-elements">
-        <div className="space-y-12">
-          <h2 className="font-medium">
-            Hi,
-            <br />
-            I'm Suman Sengupta
-          </h2>
-          <Button variant={'primary'} size={'lg'}>
-            Get in touch
-          </Button>
+      <div className="px-14 col-span-3 grid grid-cols-[2fr_3fr] bg-foreground rounded-elements">
+        <div className="flex flex-col gap-12 py-12">
+          <div className="flex-1 space-y-4">
+            <span className="text-sm">H E L L O ,</span>
+            <h2 className="font-medium">I'm Suman Sengupta</h2>
+          </div>
+          <span>
+            <Button variant={'primary'} size={'lg'}>
+              Get in touch
+            </Button>
+          </span>
         </div>
 
-        <div className="relative flex items-center justify-between overflow-hidden h-[300px]">
-          <div className="w-1/2 h-full overflow-hidden">
-            <AutoplayCarousel scrollDirection="ttb" />
-          </div>
-          <div className="w-1/2 h-full overflow-hidden">
-            <AutoplayCarousel scrollDirection="btt" />
-          </div>
-        </div>
+        {/* <Lottie
+            animationData={ComputerAnimation}
+            loop={true}
+            // height={100}
+            // width={100}
+            autoplay={true}
+            className="h-96 w-96 blur-xl"
+          /> */}
+        <HeroTextCarousal />
       </div>
       <Card className="!p-0">
         <TestimonialSlider />

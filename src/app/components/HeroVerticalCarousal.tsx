@@ -7,7 +7,7 @@ import { EffectCards } from 'swiper/modules';
 import { FaFigma, FaReact } from 'react-icons/fa';
 import { SiAdobeillustrator, SiBitbucket, SiGit, SiJira, SiNextdotjs, SiTypescript } from 'react-icons/si';
 import { BiLogoSpringBoot } from 'react-icons/bi';
-import Carousel from './Carousel';
+import Carousel from '@/common/components/Carousel';
 
 const icons = [
   { component: <FaReact size={50} />, name: 'React' },
@@ -21,14 +21,14 @@ const icons = [
   { component: <SiBitbucket size={50} />, name: 'Bitbucket' },
 ];
 
-export default function TechnologyCards() {
+export default function HeroVerticalCarousal() {
   return (
-    <div className="py-6 space-y-6">
+    <div className="py-6 space-y-2 rotate-90">
       <Carousel scrollDirection="rtl">
         {icons.map((icon, i) => (
           <li
             key={i}
-            className="flex justify-center w-24 h-24 bg-foreground rounded-full shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
+            className="flex justify-center w-64 h-72 -rotate-90 bg-topForeground rounded-2xl shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
           >
             <div className="place-self-center">{icon.component}</div>
           </li>
@@ -39,7 +39,7 @@ export default function TechnologyCards() {
         {icons.map((icon, i) => (
           <li
             key={i}
-            className="flex justify-center w-24 h-24 bg-foreground rounded-full shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
+            className="flex justify-center w-64 h-72 -rotate-90 bg-topForeground rounded-2xl shadow-[0_4px_6px_rgba(0,0,0,0.1)]"
           >
             <div className="place-self-center">{icon.component}</div>
           </li>

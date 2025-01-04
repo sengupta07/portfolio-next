@@ -1,38 +1,42 @@
-'use client';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/autoplay';
-import { Autoplay, FreeMode } from 'swiper/modules';
-import { carouselImageDetails } from '@/app/data/imagecarousel.data';
+import React from 'react'; // Assuming you include your custom CSS here
 
-interface AutoplayCarouselProps {
-  scrollDirection?: 'ttb' | 'btt';
-}
+const VerticalSlider: React.FC = () => {
+  const sliderOneItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4'];
+  const sliderTwoItems = ['Item A', 'Item B', 'Item C', 'Item D'];
 
-export default function AutoplayCarousel({ scrollDirection = 'ttb' }: AutoplayCarouselProps) {
   return (
-    <>
-      <Swiper
-        modules={[FreeMode, Autoplay]}
-        spaceBetween={30}
-        slidesPerView="auto"
-        loop={true}
-        speed={6500}
-        freeMode={true}
-        direction={'vertical'}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        className="mySwiper"
-      >
-        {carouselImageDetails.map((detail, index) => (
-          <SwiperSlide key={index}>
-            <img src={detail.imgUrl} alt={detail.title} className="h-4/5 w-4/5 rounded-lg object-cover" />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <div className="flex justify-center space-x-10 p-10">
+      <div className="verticalcolumnone">
+        <div className="carouselverticalone">
+          {sliderOneItems.map((item, index) => (
+            <div key={index} className="text-white bg-blue-600 text-center p-5 mb-2 rounded shadow-lg">
+              {item}
+            </div>
+          ))}
+          {sliderOneItems.map((item, index) => (
+            <div key={index} className="text-white bg-blue-600 text-center p-5 mb-2 rounded shadow-lg">
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="verticalcolumntwo">
+        <div className="carouselverticaltwo">
+          {sliderTwoItems.map((item, index) => (
+            <div key={index} className="text-white bg-green-600 text-center p-5 mb-2 rounded shadow-lg">
+              {item}
+            </div>
+          ))}
+          {sliderTwoItems.map((item, index) => (
+            <div key={index} className="text-white bg-green-600 text-center p-5 mb-2 rounded shadow-lg">
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default VerticalSlider;

@@ -66,3 +66,69 @@
   object-fit: cover;
   border-radius: 10px; /* Add a bit of styling */
 }
+
+.carouselverticalone {
+  animation: looping 10s linear 0s infinite none;
+}
+
+.verticalcolumnone {
+  max-height: 750px;
+  height: 750px;
+  width: 200px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px var(--stroke-color, white);
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes looping {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .verticalcolumnone {
+    max-height: 350px;
+    height: 350px;
+    width: 100px;
+  }
+}
+
+.carouselverticaltwo {
+  animation: looping 12s linear 0s infinite none reverse;
+  animation-direction: reverse;
+}
+
+.verticalcolumntwo {
+  max-height: 750px;
+  height: 750px;
+  width: 200px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+  mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+}
+
+@keyframes looping {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .verticalcolumntwo {
+    max-height: 350px;
+    height: 350px;
+    width: 100px;
+  }
+}
