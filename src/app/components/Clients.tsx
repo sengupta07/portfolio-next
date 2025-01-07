@@ -2,9 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { clients } from '@/app/data/clients.data';
 
-type Props = {};
-
-const Clients = (props: Props) => {
+const Clients = () => {
   return (
     <div className="flex justify-center opacity-20 gap-20 mt-16">
       {clients.map((client, index) => (

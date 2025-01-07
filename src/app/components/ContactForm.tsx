@@ -1,13 +1,13 @@
 import Button from '@/common/components/Button';
 import Link from 'next/link';
 import React from 'react';
-import { useForm, Controller, FieldValues } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 
 type FormField = {
   name: keyof FormValues;
   label: string;
   type: 'text' | 'textarea';
-  rules: any;
+  rules: object;
 };
 
 type FormValues = {

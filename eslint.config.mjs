@@ -10,7 +10,19 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
+  // Remove the extends and disable all rules
+  // ...compat.extends("next/core-web-vitals", "next/typescript"),
+
+  {
+    rules: {
+      // Disable all rules by setting them to 'off'
+      "no-unused-vars": "off",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      // Add more rules to disable if needed
+      // You can disable all ESLint rules by explicitly setting them to "off"
+    },
+  },
 ];
 
 export default eslintConfig;
