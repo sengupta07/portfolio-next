@@ -5,31 +5,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import TestimonialCard from './TestimonialCard';
 import { Autoplay } from 'swiper/modules';
-
-// Testimonial data
-const testimonials = [
-  {
-    quote:
-      'Working with Jacob was transformative. His creativity and attention to detail brought our vision to life. He delivered an exceptional design and offered valuable suggestions. Highly recommend!',
-    name: 'Jacob Jones',
-    designation: 'Co-founder & CEO',
-    company: 'porta.co',
-  },
-  {
-    quote:
-      "Emma's professionalism and expertise exceeded our expectations. Her ability to capture our brand's essence in the design was remarkable. We'll definitely work with her again!",
-    name: 'Emma Stone',
-    designation: 'Marketing Director',
-    company: 'creative.inc',
-  },
-  {
-    quote:
-      "John's innovative solutions and clear communication made our project a success. He went above and beyond to ensure our satisfaction. Absolutely stellar work!",
-    name: 'John Doe',
-    designation: 'Product Manager',
-    company: 'startup.xyz',
-  },
-];
+import { testimonials } from '@/app/data/testimonials.data';
 
 const TestimonialSlider = () => {
   return (

@@ -12,8 +12,9 @@ const ProjectsShowcase = (props: Props) => {
       <div className="grid gap-6 sm:grid-cols-2">
         {projects.map((project, index) => (
           <ProjectCard
+            link={project.link}
             key={index}
-            tag={project.tag}
+            tags={project.tags}
             heading={project.heading}
             projectImageSrc={project.projectImageSrc}
           />

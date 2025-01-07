@@ -8,7 +8,7 @@ const BlogSection = () => {
   return (
     <div className="container space-y-12">
       <SectionHeader mainHeading="Read my articles" subheading="BLOG SECTION" />
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {sortedArticles.map((article, index) => (
           <div key={article.id} className={index === 0 ? 'row-span-3' : ''}>
             <ArticleCard

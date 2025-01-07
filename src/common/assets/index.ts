@@ -23,9 +23,13 @@ const assets = {
 
     //PROJECTS
     avatarGenerator: '/projects/avatarGenerator.png',
+    weatherapp: '/projects/weatherApp.png',
+    notepadreact: '/projects/notepadReact.png',
+    illustrator: '/projects/illustrator.png',
 
     //COMPANIES I WORKED
-    geotechInfo: '/logos/geotech.jpg'
+    geotechInfo: '/logos/geotech.jpg',
+    fiverr: '/logos/fiverr.jpg'
   }
   
 export default assets

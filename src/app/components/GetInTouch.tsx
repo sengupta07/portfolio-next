@@ -13,7 +13,7 @@ const GetInTouch = (props: Props) => {
         <div className="rounded-t-elements bg-background">
           <ContactCard />
         </div>
-        <div className="bg-foreground rounded-b-elements py-3">
+        <div className="bg-foreground rounded-b-elements py-3 max-md:px-3">
           <p className="text-white text-center opacity-20">PROMISE YOU THAT I’LL REPLY BACK WITHIN 24 HOURS.</p>
         </div>
       </Card>

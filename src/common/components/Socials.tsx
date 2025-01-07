@@ -2,14 +2,14 @@ import Link from 'next/link';
 import React from 'react';
 import { FaFacebook, FaLinkedin, FaTwitter, FaLink } from 'react-icons/fa';
 
-const Socials = () => {
-  const socials = [
-    { icon: <FaFacebook />, link: 'https://facebook.com', label: 'Facebook' },
-    { icon: <FaLinkedin />, link: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaTwitter />, link: 'https://twitter.com', label: 'Twitter' },
-    { icon: <FaLink />, link: '#', label: 'Link' },
-  ];
+export const socials = [
+  { icon: <FaFacebook />, link: 'https://www.facebook.com/sumon.sengupta.1', label: 'Facebook' },
+  { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/suman-sengupta/', label: 'LinkedIn' },
+  { icon: <FaTwitter />, link: 'https://twitter.com', label: 'Twitter' },
+  { icon: <FaLink />, link: '#', label: 'Link' },
+];
 
+const Socials = () => {
   return (
     <div className="grid grid-cols-4 gap-6">
       {socials.map((social, index) => (

@@ -17,6 +17,7 @@ const MyServices = (props: Props) => {
             icon={service.icon}
             iconClassname={service.iconClassname}
             description={service.description}
+            redirectURL={service.redirectURL}
           />
         ))}
       </div>

@@ -13,14 +13,14 @@ import ComputerAnimation from '@/common/icons/hero3.json';
 import HeroTextCarousal from './HeroTextCarousal';
 
 const Hero = () => {
-  const startDate = new Date('2021-01-01');
+  const startDate = new Date('2024-01-01');
   const currentDate = new Date();
   const yearsOfExperience = Math.floor((currentDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24 * 365));
 
   return (
-    <div className="container grid grid-cols-3 gap-5">
-      <div className="px-14 col-span-3 grid grid-cols-[2fr_3fr] bg-foreground rounded-elements">
-        <div className="flex flex-col gap-12 py-12">
+    <div className="container grid md:grid-cols-3 gap-5">
+      <div className="md:px-14 md:col-span-3 grid grid-cols-1 md:grid-cols-[2fr_3fr] bg-foreground rounded-elements">
+        <div className="max-md:px-6 flex flex-col gap-12 py-12">
           <div className="flex-1 space-y-4">
             <span className="text-sm">H E L L O ,</span>
             <h2 className="font-medium">I'm Suman Sengupta</h2>
@@ -42,7 +42,7 @@ const Hero = () => {
           /> */}
         <HeroTextCarousal />
       </div>
-      <Card className="!p-0">
+      <Card className="!p-0 overflow-hidden">
         <TestimonialSlider />
       </Card>
       <Card className="relative !p-0 overflow-hidden">

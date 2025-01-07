@@ -171,7 +171,7 @@ const HeroTextCarousal: React.FC = () => {
         </ParallaxText>
       </section>
       <div
-        className="absolute pointer-events-none w-full h-full inset-0 top-auto z-0"
+        className="max-md:hidden absolute pointer-events-none w-full h-full inset-0 top-auto z-0"
         style={{
           backgroundImage: `radial-gradient(50% 110% at 50% 0, transparent 0%, transparent 50%, #1E1E1F 100%)`,
         }}

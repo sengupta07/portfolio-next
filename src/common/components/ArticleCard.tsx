@@ -28,7 +28,7 @@ const ArticleCard: React.FC<ArticleProps> = ({ tags, title, description, image, 
           />
         </div>
       )}
-      <div className="flex justify-between items-center">
+      <div className="flex max-md:flex-col max-md:gap-4 justify-between md:items-center">
         <div className="flex gap-2">
           {tags.map((tag, index) => (
             <div

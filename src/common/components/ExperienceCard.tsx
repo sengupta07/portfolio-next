@@ -38,7 +38,7 @@ const ExperienceCard = ({ startDate, endDate, position, company, description, lo
   const formattedEndDate = endDate ? formatDate(endDate) : 'Now';
 
   return (
-    <Card className="p-6 space-y-4 !bg-topForeground grid grid-cols-[1fr_2fr] items-center">
+    <Card className="p-6 space-y-4 !bg-topForeground grid md:grid-cols-[1fr_2fr] items-center">
       <div className="flex flex-col text-sm">
         {endDate ? (
           <h4 className="font-medium">
@@ -52,7 +52,7 @@ const ExperienceCard = ({ startDate, endDate, position, company, description, lo
         )}
       </div>
 
-      <div className="border-l space-y-6 border-white border-opacity-5 pl-32">
+      <div className="md:border-l max-md:border-t max-md:pt-6 space-y-6 border-white border-opacity-5 md:pl-32">
         <div className="space-y-2">
           <Link
             href={companyPage}

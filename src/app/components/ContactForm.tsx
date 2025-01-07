@@ -60,7 +60,11 @@ const Field: React.FC<{
   }`;
 
   return (
-    <div className={`${field.name === 'email' || field.name === 'message' ? 'md:col-span-2' : ''} space-y-2`}>
+    <div
+      className={`${
+        field.name === 'email' || field.name === 'message' ? 'md:col-span-2' : ''
+      } space-y-2 max-md:col-span-2`}
+    >
       {/* <label className="text-sm font-medium text-c-primary-marine-blue">{field.label}</label> */}
       <Controller
         name={field.name}
@@ -102,7 +106,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full p-10 flex flex-col gap-8">
+    <div className="w-full p-10 max-md:p-6 flex flex-col gap-8">
       <div className="space-y-2">
         <h4 className="font-medium text-white">Fill the form below</h4>
         <div>
@@ -112,7 +116,7 @@ const ContactForm: React.FC = () => {
           </Button>
         </div>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-6">
+      <form onSubmit={handleSubmit(onSubmit)} className="grid gap-6">
         {formFields.map((field) => (
           <Field key={field.name} field={field} control={control} error={errors[field.name]?.message} />
         ))}

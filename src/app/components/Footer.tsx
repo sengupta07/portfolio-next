@@ -1,3 +1,4 @@
+import { socials } from '@/common/components/Socials';
 import Link from 'next/link';
 import React from 'react';
 
@@ -14,19 +15,13 @@ const FooterSection: React.FC<FooterSectionProps> = ({ title, content }) => (
 );
 
 const Footer = () => {
-  const links = [
-    { name: 'Facebook', href: 'https://facebook.com' },
-    { name: 'Twitter', href: 'https://twitter.com' },
-    { name: 'LinkedIn', href: 'https://linkedin.com' },
-  ];
-
   return (
     <footer className="bg-footer !mt-36">
       <div className="container w-full py-6">
         <p className="text-white opacity-50 text-center">Announcements</p>
       </div>
       <div className="w-full gradient-border"></div>
-      <div className="container w-full py-24 grid grid-cols-3 gap-20">
+      <div className="container w-full py-24 grid md:grid-cols-3 gap-20">
         <FooterSection
           title="About"
           content="Crafting responsive websites that bring your digital vision to life. Transforming raw footage into captivating visual stories through seamless editing. Creating visually stunning graphics that make a lasting impression."
@@ -35,9 +30,9 @@ const Footer = () => {
           title="Links"
           content={
             <div className="flex flex-col gap-2">
-              {links.map((link) => (
-                <Link key={link.name} href={link.href}>
-                  {link.name}
+              {socials.map((link) => (
+                <Link key={link.label} href={link.link}>
+                  {link.label}
                 </Link>
               ))}
             </div>

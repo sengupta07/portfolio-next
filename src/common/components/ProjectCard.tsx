@@ -6,19 +6,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 type Props = {
-  tag: string;
+  tags: string[];
   heading: string;
   projectImageSrc: string;
+  link: string;
 };
 
-const ProjectCard = ({ tag, heading, projectImageSrc }: Props) => {
+const ProjectCard = ({ link, tags, heading, projectImageSrc }: Props) => {
   return (
-    <Link href={'https://github.com/sengupta07'} className="group">
+    <Link href={link} target="_blank" className="group">
       <Card className="flex flex-col">
         <div className="flex justify-between items-center mb-4">
           <div className="space-y-4">
-            <div className="inline-flex items-center bg-tag bg-opacity-10 text-green-300 border border-green-900 px-3 rounded-full text-sm py-1 announcement-badge">
-              {tag}
+            <div className="flex flex-wrap gap-2">
+              {tags.map((tag, index) => (
+                <div
+                  key={index}
+                  className="inline-flex items-center bg-tag bg-opacity-10 text-green-300 border border-green-900 px-3 rounded-full text-sm py-1"
+                >
+                  {tag}
+                </div>
+              ))}
             </div>
             <h6 className="font-semibold">{heading}</h6>
           </div>

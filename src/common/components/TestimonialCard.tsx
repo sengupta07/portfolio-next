@@ -11,10 +11,12 @@ type TestimonialProps = {
 
 const TestimonialCard = ({ quote, name, designation, company }: TestimonialProps) => {
   return (
-    <div className="space-y-3">
-      <p className="text-xl opacity-60">
-        <i>{quote}</i>
-      </p>
+    <div className="flex flex-col gap-3 h-full">
+      <div className="flex-1 ">
+        <p className="text-xl opacity-60 line-clamp-6">
+          <i>{quote}</i>
+        </p>
+      </div>
       <div className="text-base font-medium border-t border-white border-opacity-10 pt-6 flex justify-between items-end">
         <div>
           <p>{name}</p>
