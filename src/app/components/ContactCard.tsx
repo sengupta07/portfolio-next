@@ -35,7 +35,7 @@ const ContactCard = () => {
     <div className="grid md:grid-cols-[2fr_3fr] p-6 gap-6 ">
       <aside className="bg-foreground rounded-elements flex flex-col">
         <div className="p-10 max-md:p-6 relative space-y-6 flex-1">
-          <DetailSection title="Address" description="Riverside 25, San Francisco, California">
+          <DetailSection title="Address" description="93/3, Arabindanagar, Bankura - 722101">
             <Link href={'https://www.google.com/maps'} className="text-base font-medium text-white opacity-85">
               View on Maps
             </Link>

@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+.hamburger-menu {
+  @apply flex flex-col justify-center items-center lg:hidden cursor-pointer;
+
+  span {
+    @apply block h-0.5 w-6 bg-white rounded-sm transition-all duration-300 ease-out;
+
+    &:nth-child(2) {
+      @apply my-0.5 transition-none;
+    }
+  }
+
+  &.is-open {
+    span:first-child {
+      @apply rotate-45 translate-y-1;
+    }
+
+    span:nth-child(2) {
+      @apply opacity-0;
+    }
+
+    span:last-child {
+      @apply -rotate-45 -translate-y-1;
+    }
+  }
+}
+
 @layer components {
   .container {
     @apply w-full mx-auto max-w-[1440px] px-5;
