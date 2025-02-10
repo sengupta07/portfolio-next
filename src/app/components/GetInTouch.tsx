@@ -20,7 +20,7 @@ const GetInTouch = (props: Props) => {
     >
       <SectionHeader mainHeading="Let's work together" subheading="GET IN TOUCH" />
       <motion.div variants={itemVariants}>
-        <Card className="bg-foreground !p-0.5">
+        <Card className="bg-foreground !p-0.5 !border-none">
           <div className="rounded-t-elements bg-background">
             <ContactCard />
           </div>

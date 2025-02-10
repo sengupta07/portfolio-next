@@ -19,7 +19,7 @@ const Socials = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={social.label}
-          className="text-white text-opacity-70 lg:p-6 md:p-2 aspect-square rounded-2xl bg-foreground hover:bg-linkHover transition-colors duration-200 ease-in-out flex justify-center items-center"
+          className="text-white text-opacity-70 lg:p-6 md:p-2 aspect-square rounded-2xl bg-foreground hover:bg-linkHover transition-colors duration-200 ease-in-out flex justify-center items-center border border-white border-opacity-10"
         >
           {React.cloneElement(social.icon, { size: 36 })}
         </Link>

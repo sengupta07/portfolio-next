@@ -25,7 +25,7 @@ const Hero = () => {
       viewport={{ once: true }}
     >
       <motion.div
-        className="md:px-14 md:col-span-3 grid grid-cols-1 md:grid-cols-[2fr_3fr] bg-foreground rounded-elements"
+        className="md:px-14 md:col-span-3 grid grid-cols-1 md:grid-cols-[2fr_3fr] bg-foreground border border-white border-opacity-10 rounded-elements"
         variants={itemVariants}
       >
         <div className="max-md:px-6 flex flex-col gap-12 py-12 max-md:text-center">
